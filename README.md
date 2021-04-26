@@ -1,13 +1,49 @@
-Task details:
-1. Create a Django or Node.js or Go or ‘Ruby on Rails’ Application which shows a simple format "/user-form". The form
-asks the user for his details(name, date of birth, email, phone number). The form is rendered in any of the modern
-frontend frameworks like React.js, Vue.js or Angular. The date of the birth field should be a calendar option.
-2. The user fills the form and presses submit. Perform basic front-end validation on the name, email, DoB (age cannot
-be less than 18 years).
-3. Phone number validation happens at the backend. If you are using Django then Django-Rest-Framework is
-preferred. If RoR, node.js or Go or Scala, use the relevant framework/suggested best practice for writing modular
-code.
-4. Save the form and send an email to the form submitter.
-5. After the form is submitted redirect the user to a page where all the submitted forms are displayed.
-5. Deploy your code onto a free cloud server of your choice such as Heroku/Pythonanywhere and share the live
-link/URL with us to test.
+# X-Meme
+Application to view forms posted by the community of users, where users can:
+ - save forms with their details.
+ - receive email confirming that the form was saved successfully.
+ 
+## Tech stack used in the project
+MERN stack application. 
+ - MongoDB
+ - ExpressJS
+ - ReactJS
+ - NodeJS
+ 
+## External libraries used in UI are:
+  - Axios
+  - Ant-design
+
+## External libraries used in backend are:
+  - Cors
+  - Dotenv
+
+## Codebase structure:
+  - There are two main folders, namely `backend` & `frontend` where the code for backend and frontend resides respectively.
+
+  
+## Prerequisites for running the project:
+  - You should have `node` installed on your machine.
+  - For database, you can either use mongoDB atlas which is cloud db or use your local db server using mongoDB compass.
+
+## Steps to run the project in the local:
+### If you are windows user:
+ 1. Clone the repository.
+ 2. After cloning the repo, switch to `backend` folder using:
+    - `cd backend`
+ 3. Now run `npm install` to install the backend dependencies.
+ 4. After installing dependencies, run `npm run server` to start the server which should load [here](http://localhost:8081).
+ 5. Go back to the root of the repo, and switch to `frontend` folder using:
+    - `cd frontend`
+ 6. Now run `npm install` to install the frontend dependencies.
+ 7. After installing dependencies, run `npm start` to start the UI which should load [here](http://localhost:3000).
+ 
+### Note:
+ 1. In order to run this project using local db you should have MongoDBCompass installed.
+ 2. In order to connect to local mongoDB database you need to replace the mongoDB URI inside `backend\config\keys.js` to `'mongodb://127.0.0.1:27017/Xmeme'` (including single quotes) where `Xmeme` is the db name. You can use your choice of db name.
+
+
+## Feedbacks:
+  - I am always an [email](ankurchaudhary627@gmail.com)/ [linkedin](https://www.linkedin.com/in/ankurchaudhary627/) ping away for the feedbacks to improve this further or add new functionalities or discussing new ideas (not regarding this project in particular).
+ 
+### Want to play with the app?  [Check out this](https://meme-ex.netlify.app/)
