@@ -1,4 +1,4 @@
-# X-Meme
+# Form-app
 Application to view forms posted by the community of users, where users can:
  - save forms with their details.
  - receive email confirming that the form was saved successfully.
